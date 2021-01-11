@@ -136,7 +136,7 @@ console.log('23' - '10' - 3);
 console.log('23' / '2');
 //- can use coercion to satisfy conditional statements
 console.log('23' > '18');
-*/
+
 
 
 // 5 falsy values: 0, '', undefined, null, NaN
@@ -165,3 +165,17 @@ if (height) {
 }   else{
     console.log('Height is UNDEFINED');
 }
+*/
+//prediction: 4
+console.log('9' - '5');
+//prediction: '617'
+console.log('19' - '13' + '17');
+//prediction: 23
+console.log('19' - '13' + 17);
+//prediction: false
+console.log('123' < 57);
+//prediction: 1143
+console.log(5 + 6 + '4' + 9 - 4 - 2);
+//all predictions correct!!
+
+
