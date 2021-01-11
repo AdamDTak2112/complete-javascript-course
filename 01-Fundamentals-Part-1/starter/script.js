@@ -82,14 +82,14 @@ const birthYear = 1991;
 const century = (birthYear <= 2000) ? 20 : 21;
 
 console.log(century);
-*/
+
 
 const mMass = 95;
 const mHeight = 1.88;
 const jMass = 85;
 const jHeight = 1.76;
 
-const mBMI = mMass / mHeight ** 2;
+//const mBMI = mMass / mHeight ** 2;
 
 //added a function to calculate BMI
 function calculateBMI(mass, height){
@@ -115,3 +115,24 @@ function outputResults(){
 }
 
 outputResults();
+*/
+
+const inputYear = '1991';
+//Type conversion from String to a Number
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+//NaN error example - remember that NaN is an INVALID number
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion 
+//- automatically done by JS
+//- addition finalizes to string concatenation
+console.log('I am ' + 23 + ' years old');
+//- subtraction finalizes as a number
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+//- can use coercion to satisfy conditional statements
+console.log('23' > '18');
