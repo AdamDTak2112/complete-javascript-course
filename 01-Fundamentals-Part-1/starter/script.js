@@ -18,7 +18,7 @@ const job;
 
 //DO NOT USE VAR
 var job = 'programmer';
-job = 'teacher';*/
+job = 'teacher';
 
 const mMass = 95;
 const mHeight = 1.88;
@@ -38,3 +38,16 @@ function markHigherBMI(){
 }
 
 console.log(markHigherBMI());
+*/
+
+const firstName = 'Jonas';
+const job = 'Teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
