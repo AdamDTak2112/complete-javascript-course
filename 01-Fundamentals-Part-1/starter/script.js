@@ -20,10 +20,10 @@ const job;
 var job = 'programmer';
 job = 'teacher';*/
 
-const mMass = 78;
-const mHeight = 1.69;
-const jMass = 92;
-const jHeight = 1.95;
+const mMass = 95;
+const mHeight = 1.88;
+const jMass = 85;
+const jHeight = 1.76;
 
 const mBMI = mMass / mHeight ** 2;
 
