@@ -1,7 +1,11 @@
-let country = "USA";
+/*let country = "USA";
 let continent = "North America";
 let population = 328200000;
+let isIsland = false;
+let language;
 
-console.log(country);
-console.log(continent);
-console.log(population);
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);*/
+
