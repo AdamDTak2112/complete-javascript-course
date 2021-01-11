@@ -115,7 +115,7 @@ function outputResults(){
 }
 
 outputResults();
-*/
+
 
 const inputYear = '1991';
 //Type conversion from String to a Number
@@ -136,3 +136,32 @@ console.log('23' - '10' - 3);
 console.log('23' / '2');
 //- can use coercion to satisfy conditional statements
 console.log('23' > '18');
+*/
+
+
+// 5 falsy values: 0, '', undefined, null, NaN
+// You won't use these, but they prove point of faulty values
+// false
+console.log(Boolean(0));
+//false
+console.log(Boolean(undefined));
+//true
+console.log(Boolean('Jonas'));
+//true
+console.log(Boolean({}));
+//false
+console.log(Boolean(''));
+//Example of implicit boolean coercion at work:
+let money = 0;
+if(money){
+    console.log("Don't spend it all ;)");
+} else {
+    console.log("You should get a job!");
+}
+
+let height;
+if (height) {
+    console.log('YAY! Height is defined');
+}   else{
+    console.log('Height is UNDEFINED');
+}
