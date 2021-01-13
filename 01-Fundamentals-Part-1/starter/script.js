@@ -257,7 +257,7 @@ switch (day) {
     default:
         console.log('Not a valid day!');
 }
-*/
+
 const day = prompt("what day?");
 //converted into if/else statements
 if (day === 'monday') {
@@ -274,3 +274,10 @@ if (day === 'monday') {
 } else {
     console.log('Not a valid day!');
 }
+
+
+//difference between expressions and statements
+statements are made up of expressions :)
+
+//already used ternary operator :)
+*/
