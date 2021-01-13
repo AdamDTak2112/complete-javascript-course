@@ -281,3 +281,9 @@ statements are made up of expressions :)
 
 //already used ternary operator :)
 */
+//coding challenge 4
+const bill = prompt('How much is the bill?')
+const tip = (bill >= 50 && bill <= 300) ? (bill * 0.15).toFixed(2) : (bill * 0.20).toFixed(2);
+
+const result = `THe bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}`;
+console.log(result);
