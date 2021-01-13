@@ -165,7 +165,7 @@ if (height) {
 }   else{
     console.log('Height is UNDEFINED');
 }
-*/
+
 //prediction: 4
 console.log('9' - '5');
 //prediction: '617'
@@ -177,5 +177,27 @@ console.log('123' < 57);
 //prediction: 1143
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 //all predictions correct!!
+*/
+
+const age = 18;
+//=== strict equals, only returns true if type and value are the same
+if (age === 18) console.log("You just became an adult :D");
+//== loose equality, returns true by doing type coercion
+
+
+const favorite = Number(prompt("What is your favorite number?"));
+console.log(favorite);
+
+if (favorite === 23) {
+    console.log('Cool! 23 is an amazing number!');
+} else if(favorite === 7){
+    console.log('7 is also a cool number!'); 
+} else{
+    console.log('Number is not 23 or 7');
+}
+
+if (favorite !== 23){
+    console.log('why not 23?');
+}
 
 
