@@ -199,7 +199,6 @@ if (favorite === 23) {
 if (favorite !== 23){
     console.log('why not 23?');
 }
-*/
 
 const numNeighbors = Number(prompt('How many neighbor countries does your country have?'));
 
@@ -212,3 +211,23 @@ if (numNeighbors === 1){
 }
 
 //skipped boolean variable lecture
+*/
+
+
+
+function calculateAverage(x, y, z) {
+    return (x + y + z) / 3;
+}
+const scoreDolphins = calculateAverage(97, 112, 101).toFixed(2);
+const scoreKoalas = calculateAverage(109, 95, 106).toFixed(2);
+if (scoreDolphins >= 100 || scoreKoalas >= 100) {
+    if (scoreDolphins === scoreKoalas) {
+        console.log(`It's a tie!!! Average scores: Dolphins ${scoreDolphins}, Koalas ${scoreKoalas}.`);
+    } else if (scoreDolphins > scoreKoalas) {
+        console.log(`Dolphins win!!! Average scores: Dolphins ${scoreDolphins}, Koalas ${scoreKoalas}.`);
+    } else {
+        console.log(`Koalas win!!! Average scores: Dolphins ${scoreDolphins}, Koalas ${scoreKoalas}.`);
+    }
+} else {
+    console.log("Sorry, no winners today!");
+}
