@@ -36,7 +36,7 @@ console.log(calcAge(1991));
 
 // PROBLEM:
 // We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be sensor error".
-
+/*
 const tempteratures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 // 1) Understand the problem
@@ -56,7 +56,7 @@ const calcTempAmp = function (subTemps1, subTemps2, ) {
     const minTemp = Math.min(...temps);
     console.log(minTemp);
     const amplitude = maxTemp - minTemp;
-    return amplitude;*/
+    return amplitude;
     const temps = subTemps1.concat(subTemps2);
     let max = temps[0];
     let min = temps[0];
@@ -82,3 +82,16 @@ const calcTempAmp = function (subTemps1, subTemps2, ) {
 // - Merge two arrays?
 const amplitudeNew = calcTempAmp([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
+*/
+
+const measureKelvin = function () {
+    const measurement = {
+        type: 'temp',
+        unit: 'celsius',
+        value: prompt('Degrees celcius: ')
+    }
+
+    const kelvin = Number(measurement.value) + 273;
+    return kelvin;
+}
+console.log(measureKelvin());
