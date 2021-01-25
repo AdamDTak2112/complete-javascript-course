@@ -82,7 +82,7 @@ const calcTempAmp = function (subTemps1, subTemps2, ) {
 // - Merge two arrays?
 const amplitudeNew = calcTempAmp([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
-*/
+
 
 const measureKelvin = function () {
     const measurement = {
@@ -95,3 +95,20 @@ const measureKelvin = function () {
     return kelvin;
 }
 console.log(measureKelvin());
+*/
+
+//coding challenge 1
+// 1) Understand problem
+
+const printForecast = function (temps) {
+    let result = "";
+    for (let i = 0; i < temps.length; i++) {
+        const currentTemp = temps[i];
+        result += `... ${currentTemp}°C in ${i + 1} days `;
+    }
+    console.log(result);
+}
+
+const testData1 = [17, 21, 23];
+const testData2 = [12, 5, -5, 0, 4];
+printForecast(testData2);
