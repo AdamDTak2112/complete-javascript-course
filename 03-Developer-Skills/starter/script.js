@@ -50,13 +50,14 @@ const tempteratures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 // - Find min value in temp array
 // - Find difference of max and min
 
-const calcTempAmp = function (temps) {
+const calcTempAmp = function (subTemps1, subTemps2, ) {
     /*const maxTemp = Math.max(...temps);
     console.log(temps);
     const minTemp = Math.min(...temps);
     console.log(minTemp);
     const amplitude = maxTemp - minTemp;
     return amplitude;*/
+    const temps = subTemps1.concat(subTemps2);
     let max = temps[0];
     let min = temps[0];
     for (let i = 0; i < temps.length; i++) {
@@ -69,4 +70,15 @@ const calcTempAmp = function (temps) {
     }
     return max - min;
 }
-console.log(calcTempAmp(tempteratures));
+//console.log(calcTempAmp(tempteratures));
+
+//PROBLEM 2:
+// Function should now receive 2 arrays of temps
+
+// 1)Understanding the problem
+// - WIth 2 arrays, should we implement functionality twice? NO, just merge two arrays
+
+// 2) Breaking up into sub-problems
+// - Merge two arrays?
+const amplitudeNew = calcTempAmp([3, 5, 1], [9, 0, 5]);
+console.log(amplitudeNew);
